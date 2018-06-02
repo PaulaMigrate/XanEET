@@ -1,0 +1,9 @@
+IF
+InPartyAllowDead("O#Xan")
+Global("XanExistsToBJoin","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("xanExistsToBJoin","GLOBAL",1)
+ActionOverride("O#Xan",ChangeAIScript("O#Xan25S",OVERRIDE))
+Continue()
+END

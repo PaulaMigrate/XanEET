@@ -1,0 +1,10 @@
+IF
+Global("O#XanSpawned","GLOBAL",0)
+!BeenInParty("Xan") 
+GlobalLT("chapter","GLOBAL",20)
+StateCheck("Xan",STATE_REALLY_DEAD) 
+THEN
+RESPONSE #100
+SetGlobal("O#XanSpawned","GLOBAL",2)
+Continue()
+END
